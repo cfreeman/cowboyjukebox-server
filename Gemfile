@@ -5,6 +5,7 @@ gem 'pg'
 gem 'rspec-rails'
 gem 'factory_girl'
 gem 'timecop'
+gem 'unicorn'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
