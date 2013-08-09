@@ -5,6 +5,8 @@ CowboyjukeboxServer::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  root 'positions#last'
+
   get 'last' => 'positions#last'
   get 'clear' => 'positions#clear'
   post 'update' => 'positions#update'
