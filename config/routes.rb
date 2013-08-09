@@ -9,7 +9,7 @@ CowboyjukeboxServer::Application.routes.draw do
 
   get 'last' => 'positions#last'
   get 'clear' => 'positions#clear'
-  post 'update' => 'positions#update'
+  get 'update' => 'positions#update'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

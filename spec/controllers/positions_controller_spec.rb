@@ -7,7 +7,7 @@ describe PositionsController do
 
   describe 'POST update' do
     it 'should be able to update the position of a device' do
-      post :update, :imei => 'a', :lat => 1, :lon => 1
+      get :update, :imei => 'a', :lat => 1, :lon => 1
 
       Position.count.should eq 1
       Position.last.imei.should eq 'a'
