@@ -41,4 +41,8 @@ RSpec.configure do |config|
   config.order = "random"
 end
 
+def clean_after_test
+  Position.delete_all
+end
+
 FactoryGirl.find_definitions
