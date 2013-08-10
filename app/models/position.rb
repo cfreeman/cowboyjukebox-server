@@ -5,6 +5,6 @@ class Position < ActiveRecord::Base
 
 	def self.get_last()
 		devices = Position.select('max(id) AS id, imei').group('imei')
-		Position.select('id, imei, lat, lon').where('id IN (?)', devices).load
+		Position.select('id, imei, lat, lon').where('id IN (?)', devices).order('imei').load
 	end
 end
