@@ -5,11 +5,11 @@ CowboyjukeboxServer::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root 'positions#last'
-
-  get 'last' => 'positions#last'
-  get 'clear' => 'positions#clear'
-  get 'update' => 'positions#update'
+  root 'instruments#all'
+  get 'clear' => 'instruments#clear'
+  get 'update' => 'instruments#update'
+  get 'mk-instrument' => 'instruments#new'
+  get 'rm-instrument' => 'instruments#remove'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

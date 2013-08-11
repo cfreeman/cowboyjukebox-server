@@ -42,7 +42,7 @@ RSpec.configure do |config|
 end
 
 def clean_after_test
-  Position.delete_all
+  Instrument.delete_all
 end
 
 FactoryGirl.find_definitions

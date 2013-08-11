@@ -1,7 +1,9 @@
 FactoryGirl.define do
-  factory :position do
+  factory :instrument do
     imei '013498000105180'
-    lat -28.228853527113206
-    lon 153.2699418067932
+    slat -28.2288
+    slon 153.2699
+    lat -28.2288
+    lon 153.2699
   end
  end

@@ -11,19 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130809080418) do
+ActiveRecord::Schema.define(version: 20130811051023) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "positions", force: true do |t|
+  create_table "instruments", force: true do |t|
     t.string   "imei"
     t.float    "lat"
     t.float    "lon"
+    t.float    "slat"
+    t.float    "slon"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "positions", ["imei", "created_at"], name: "index_positions_on_imei_and_created_at", using: :btree
+  add_index "instruments", ["imei"], name: "index_instruments_on_imei", using: :btree
 
 end
