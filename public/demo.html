@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="style/cowboy.css" />
+
+        <title>Test Sensors</title>
+
+        <!-- Load up the controller code. -->
+        <script src="js/physical-events.js"></script>
+        <script src="js/timbre.js"></script>
+    </head>
+
+    <body>
+      <button id='play'>play</button>
+      <button id='stop'>stop</button>
+      <a href='testSynth.html'>test synth'</a>
+      <hr/>
+      <p>Your Device: <span id="imei"></span></p>
+      <p>Transmit: <span id="transmit"></span></p>
+      <p>Status: <span id="status"></span></p>
+      <hr/>
+      <div id='instruments'/>
+    </body>
+</html>
